@@ -33,7 +33,6 @@ blockquote {
 
 a {
   color: inherit;
-  /* height: fit-content; */
 }
 
 img {
@@ -47,4 +46,9 @@ button {
 
 address {
   font: inherit;
+}
+
+
+li {
+  list-style: none;
 }
