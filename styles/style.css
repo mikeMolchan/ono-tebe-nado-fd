@@ -53,8 +53,7 @@ header {
     height: 293px;
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
-    align-items: center;
-    justify-items: center; 
+    place-items: center;
     background-color: white;
 }
 
@@ -248,11 +247,13 @@ address p, address a {
     color: white;
 }
 
-.card-lot .bg { 
+.card-lot 
+.bg { 
     z-index: 0; 
 }
 
-.card-lot .overlay {
+.card-lot 
+.overlay {
     z-index: 1;
 }
 
@@ -295,9 +296,6 @@ address p, address a {
   color: white;
   text-decoration: underline;
 }
-
-
-
 
 .more  {
     margin-left: 6%;
@@ -343,9 +341,13 @@ address p, address a {
 
 }
 
-.description-text-bottom { margin-bottom: 85px; }
+.description-text-bottom { 
+    margin-bottom: 85px;
+}
 
-.description-text-top { margin-top: 70px; }
+.description-text-top { 
+    margin-top: 70px;
+}
 
 
 
