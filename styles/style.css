@@ -245,18 +245,8 @@ address p, address a {
     height: 596px;
     position: relative;
     color: white;
-}
-
-.card-lot 
-.bg { 
     z-index: 0; 
 }
-
-.card-lot 
-.overlay {
-    z-index: 1;
-}
-
 
 .first-lot-bg {
     background-image: url(../images/card-lot-01.jpg);
@@ -298,8 +288,7 @@ address p, address a {
 }
 
 .more  {
-    margin-left: 6%;
-    margin-top: 15px;
+    margin: 15px 0 0 6%;
     text-decoration: underline;
     font-size: 20px;
 }
