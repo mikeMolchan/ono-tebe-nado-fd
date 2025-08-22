@@ -2,14 +2,16 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
 }
 
 body {
   width: 1100px;
   height: 3028px;
   margin: 0 auto;
-  font-family: Raleway, sans-serif;
   background-color: black;
+  font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
 }
 
 html {

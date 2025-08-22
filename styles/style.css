@@ -1,7 +1,5 @@
 /* Глобальная структура страницы */
-header, main, footer {
-    width: 100%;
-}
+
 
 .separator, .about, .lots, footer {
     background-color: white;
@@ -80,7 +78,7 @@ header .menu-list {
 
 .menu-list .menu-list-item:nth-child(2), 
 .menu-list .menu-list-item:nth-child(3) {
-    text-decoration: underline;
+    border-bottom: 1px solid black;
     list-style: circle;
 }
 
@@ -119,6 +117,10 @@ address p, address a {
     font-size: 18px;
 }
 
+address a {
+    border-bottom: 1px solid black;
+}
+
 
 
 /* Основная часть */
@@ -155,8 +157,6 @@ address p, address a {
 
 .cover-title h1 {
     font-size: 100px;
-    font-weight: 700;
-    color: white;
     letter-spacing: 30px;
 }
 
@@ -281,13 +281,15 @@ address p, address a {
 }
 
 .card-content h2 a {
-  text-decoration: underline;
+    border-bottom: 1px solid black;
 }
 
 .more {
     margin: 15px 0 0 6%;
-    text-decoration: underline;
+    border-bottom: 1px solid black;
     font-size: 20px;
+    width: fit-content;
+    z-index: 1;
 }
 
 
@@ -374,7 +376,7 @@ footer address {
 footer .menu-list {
     display: flex;
     flex-direction: column;
-    list-style: none;
+    align-items: center;
     margin-right: 5px;
 }
 
@@ -385,6 +387,8 @@ footer .menu-list-item {
 
 footer .menu-list .menu-list-item:nth-child(2), 
 footer .menu-list .menu-list-item:nth-child(3) {
+    /* border: 1p; */
+    width: fit-content;
     list-style: none;
 }
 
