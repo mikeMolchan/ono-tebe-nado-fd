@@ -1,6 +1,5 @@
 /* Глобальная структура страницы */
 
-
 .separator, .about, .lots, footer {
     background-color: white;
 }
@@ -76,7 +75,7 @@ header .menu-list {
 }
 
 
-.menu-list .menu-list-item:nth-child(2), 
+.menu-list .menu-list-item:nth-child(2),
 .menu-list .menu-list-item:nth-child(3) {
     border-bottom: 1px solid black;
     list-style: circle;
