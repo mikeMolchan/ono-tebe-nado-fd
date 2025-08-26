@@ -4,6 +4,13 @@
     background-color: white;
 }
 
+.circle-list-style {
+    list-style: circle;
+}
+
+.underline-black {
+    border-bottom: 1px solid black;
+}
 
 .bg {
     width: 100%;
@@ -12,7 +19,7 @@
     background-position: center;
     background-size: cover;
     z-index: -2;
-  }
+}
   
 .overlay {
     position: absolute;
@@ -27,10 +34,9 @@
 main {
     display: grid;
     grid-template-rows: 757px 180px 723px 120px 630px 180px;
-    height: 2555px;
+    /* height: 2555px; */
     justify-items: center;
 }
-
 
 section {
     width: 100%;
@@ -46,8 +52,9 @@ section {
 
 /* Хэдер */
 
-header {
-    height: 293px;
+.header {
+    /* height: 293px; */
+    padding: 93px 0 95px 0;
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     place-items: center;
@@ -58,7 +65,7 @@ header {
 
 header nav {
     width: 391.5px;
-    height: 20px;
+    /* height: 20px; */
 }
 
 header nav, header address {
@@ -75,11 +82,7 @@ header .menu-list {
 }
 
 
-.menu-list .menu-list-item:nth-child(2),
-.menu-list .menu-list-item:nth-child(3) {
-    border-bottom: 1px solid black;
-    list-style: circle;
-}
+
 
 /* Лого */
 
@@ -98,37 +101,32 @@ header .menu-list {
 
 address {
     width: fit-content;
-    height: 100px;
+    /* height: 100px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
 }
 
 header address {
     margin-left: 20%;
 }
 
-
-
 address p, address a {
     line-height: 25px;
     font-size: 18px;
 }
 
-address a {
+/* address a {
     border-bottom: 1px solid black;
-}
+} */
 
 
 
 /* Основная часть */
 
-
 .cover-bg {
     background-image: url(../images/cover.jpg);
 }
-
 
 /* Секция обложки */
 
@@ -141,9 +139,6 @@ address a {
     flex-direction: column;
     align-items: center;
 }
-
-
-
 
 .cover-title {
     width: 100%;
@@ -177,7 +172,6 @@ address a {
     top: 267px;
     right: 92px;
 }
-
 
 /* Описание обложки */
 
@@ -220,16 +214,16 @@ address a {
     display: flex;
     flex-direction: column;
     gap: 15px;
-
 }
 
-.lots h1 {
+.lots h2 {
     font-size: 40px;
     margin-left: 6%;
 }
 
 .articles-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     list-style: none;
     gap: 24px;
@@ -238,10 +232,9 @@ address a {
     align-items: stretch;
 }
 
-
 .card-lot {
     width: 334px;
-    height: 596px;
+    min-height: 596px;
     position: relative;
     color: white;
     z-index: 1;
@@ -257,9 +250,8 @@ address a {
     background-image: url(../images/card-lot-03.jpg);
 }
 
-
 .card-content {
-  position: relative;
+  /* position: relative; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -272,25 +264,24 @@ address a {
     width: 260px;
 }
 
-.card-content h2 {
+.card-content h3 {
   margin: 0 0 16px;
   font-size: 22px;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
-.card-content h2 a {
-    border-bottom: 1px solid black;
+.article-title a {
+    border-bottom: 1px solid white;
 }
 
 .more {
     margin: 15px 0 0 6%;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     font-size: 20px;
     width: fit-content;
     z-index: 1;
 }
-
 
 
 
@@ -312,10 +303,9 @@ address a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
 }
 
-.about-description h1 {
+.about-description h2 {
     font-size: 40px;
     text-transform: uppercase;
     margin-top: 120px;
@@ -323,7 +313,6 @@ address a {
 
 .about-description p {
     font-size: 20px;
-
 }
 
 .description-text-top {
@@ -344,9 +333,7 @@ address a {
     border-radius: 100%;
     background-color: black;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
+    margin: 35px auto 0 auto;
 }
 
 .logo-bg img {
@@ -356,13 +343,15 @@ address a {
 }
 
 
+
 /* Футер */
 
 footer {
-    height: 180px;
+    /* height: 180px; */
     display: flex;
     justify-content: space-between;
     align-items: start;
+    padding-bottom: 80px;
 }
 
 footer address {
@@ -383,14 +372,6 @@ footer .menu-list-item {
     text-align: center;
     font-size: 18px;
 }
-
-footer .menu-list .menu-list-item:nth-child(2), 
-footer .menu-list .menu-list-item:nth-child(3) {
-    /* border: 1p; */
-    width: fit-content;
-    list-style: none;
-}
-
 
 /* Соцсети */
 

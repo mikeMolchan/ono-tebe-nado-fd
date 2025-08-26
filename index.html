@@ -14,20 +14,20 @@
   <body>
 
     <!-- Хэдер -->
-    <header>
+    <header class="header">
       <nav>
         <ul class="menu-list">
-          <li class="menu-list-item">главная</li>
-          <li class="menu-list-item"><a href="#lots">посмотреть лоты</a></li>
-          <li class="menu-list-item"><a href="#about">об аукционе</a></li>
+          <li class="menu-list-item"><a href="#">главная</a></li>
+          <li class="menu-list-item circle-list-style underline-black"><a href="#lots">посмотреть лоты</a></li>
+          <li class="menu-list-item circle-list-style underline-black"><a href="#about">об аукционе</a></li>
         </ul>
       </nav>
       <a class="header-logo">
         <img src="./images/logo-black.svg" alt="Черный логотип сайта">
       </a>
       <address>
-        <a href="tel:+99995555555">+9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <a href="tel:+99995555555" class="underline-black">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge" class="underline-black">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-<br>265, Амстердам</p>
       </address>
     </header>
@@ -47,7 +47,7 @@
             <div class="cover-separator"></div>
             <div class="description">
                 <p class="description-text">Аукцион вещей, в которые никто не верил</p>
-                <button class="bet-button">Сделать ставку</button>
+                <button class="bet-button" type="button">Сделать ставку</button>
             </div>
       </section>
 
@@ -55,13 +55,13 @@
 
       <!-- Лоты -->
       <section class="lots" id="lots">
-        <h1>ЛОТЫ</h1>
+        <h2>ЛОТЫ</h2>
         <ul class="articles-container">
           <li class="card-lot">
             <div class="bg first-lot-bg"></div>
             <div class="overlay"></div>
             <article class="card-content">
-              <h2><a href="#">Фильм режиссёра, который бросил киношколу</a></h2>
+              <h3 class="article-title"><a href="#">Фильм режиссёра, который бросил киношколу</a></h3>
               <p>Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, <br>если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
             </article>
           </li>
@@ -69,7 +69,7 @@
             <div class="bg second-lot-bg"></div>
             <div class="overlay"></div>
             <article class="card-content">
-              <h2><a href="#">Книга, где описан один скучный день<br>из жизни<br> рекламного агента</a></h2>
+              <h3 class="article-title"><a href="#">Книга, где описан один скучный день<br>из жизни<br> рекламного агента</a></h3>
               <p>Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
             </article>
           </li>
@@ -77,12 +77,36 @@
             <div class="bg third-lot-bg"></div>
             <div class="overlay"></div>
             <article class="card-content">
-              <h2><a href="#">Картина, которую повторит даже 5-летний сын <br>маминой подруги</a></h2>
+              <h3 class="article-title"><a href="#">Картина, которую повторит даже 5-летний сын <br>маминой подруги</a></h3>
               <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из <br>революционных работ Кандинского?</p>
             </article>
           </li>
+          <!-- <li class="card-lot">
+            <div class="bg third-lot-bg"></div>
+            <div class="overlay"></div>
+            <article class="card-content">
+              <h3 class="article-title"><a href="#">Картина, которую повторит даже 5-летний сын <br>маминой подруги</a></h3>
+              <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из <br>революционных работ Кандинского?</p>
+            </article>
+          </li>
+          <li class="card-lot">
+            <div class="bg third-lot-bg"></div>
+            <div class="overlay"></div>
+            <article class="card-content">
+              <h3 class="article-title"><a href="#">Картина, которую повторит даже 5-летний сын <br>маминой подруги</a></h3>
+              <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из <br>революционных работ Кандинского?</p>
+            </article>
+          </li>
+          <li class="card-lot">
+            <div class="bg third-lot-bg"></div>
+            <div class="overlay"></div>
+            <article class="card-content">
+              <h3 class="article-title"><a href="#">Картина, которую повторит даже 5-летний сын <br>маминой подруги</a></h3>
+              <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из <br>революционных работ Кандинского?</p>
+            </article>
+          </li> -->
         </ul>
-        <a class="more">посмотреть больше</a>
+        <a class="more underline-black">посмотреть больше</a>
       </section>
 
       <div class="separator"></div>
@@ -95,7 +119,7 @@
           </div>
         </div>
         <div class="about-description">
-          <h1>об аукционе</h1>
+          <h2>об аукционе</h2>
           <p class="description-text-top">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
           <p class="description-text-bottom">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря<br>
             на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
@@ -109,15 +133,15 @@
     <!-- Футер -->
     <footer>
       <address>
-        <a href="tel:+99995555555">+9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <a href="tel:+99995555555" class="underline-black">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge" class="underline-black">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav>
         <ul class="menu-list">
-          <li class="menu-list-item">главная</li>
-          <li class="menu-list-item">посмотреть лоты</li>
-          <li class="menu-list-item">об аукционе</li>
+          <li class="menu-list-item"><a href="#">главная</a></li>
+          <li class="menu-list-item underline-black"><a href="#lots">посмореть лоты</a></li>
+          <li class="menu-list-item underline-black"><a href="#about">об аукционе</a></li>
         </ul>
       </nav>
       <ul class="social-list">
@@ -128,3 +152,13 @@
     </footer>
   </body>
 </html>
+
+
+
+
+<!-- TODO:
+
+1. cover
+2. bg
+3. h1 -> h2
+4. separator -->
