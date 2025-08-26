@@ -8,14 +8,15 @@
 
 body {
   width: 1100px;
-  height: 3028px;
+  /* height: 3028px; */
   margin: 0 auto;
-  background-color: black;
+  background-color: white;
   font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 h1,
