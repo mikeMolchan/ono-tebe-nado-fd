@@ -30,7 +30,6 @@ main {
 
 section {
     width: 100%;
-    height: 100%;
 }
 
 
@@ -47,15 +46,15 @@ section {
 
 /* Навигация */
 
-header nav {
-    width: 391.5px;
+.header .nav {
+    min-width: 392px;
 }
 
-header nav, header address {
+.header .nav, .header address {
     margin: 0 0 5px 10px;
 }
 
-header .menu-list {
+.header .menu-list {
     display: flex;
     justify-content: space-between;
     list-style: circle;
@@ -78,18 +77,17 @@ header .menu-list {
 
 /* Адрес */
 
-address {
-    width: fit-content;
+.address {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-header address {
+.header .address {
     margin-left: 20%;
 }
 
-address p, address a {
+.address p, .address a {
     line-height: 25px;
     font-size: 18px;
 }
@@ -230,8 +228,9 @@ h1 span:nth-child(3) {
   text-transform: uppercase;
 }
 
-.article-title a {
-    border-bottom: 1px solid white;
+.article-title {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
 
 .more {
@@ -301,29 +300,29 @@ h1 span:nth-child(3) {
 
 /* Футер */
 
-footer {
+.footer {
     display: flex;
     justify-content: space-between;
-    align-items: start;
-    padding-bottom: 90px;
+    align-items: flex-start;
+    padding-bottom: 80px;
     margin-top: 180px;
 }
 
-footer address {
+.footer .address {
     width: 250px;
     margin-left: 50px;
 }
 
 /* Навигация */
 
-footer .menu-list {
+.footer .menu-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 5px;
 }
 
-footer .menu-list-item {
+.footer .menu-list-item {
     text-align: center;
     font-size: 18px;
 }
